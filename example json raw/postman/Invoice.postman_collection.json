@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "fd15156e-2d47-43e1-8b84-3d6d49a2a833",
+		"name": "Invoice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3002/api/invoice",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					},
+					{
+						"key": "hola",
+						"value": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"logo\": \"http://ruta.com\",\r\n        \"fromclient\": \"Publicidad Creativa\",\r\n        \"toclient\": \"Sergio\",\r\n        \"date\": \"22/05/2018\",\r\n        \"numberinvoice\": 80,\r\n        \"payment\": \"De Contado - Transferencia\",\r\n        \"expiration\": \"25/05/2018\",\r\n        \"items\": [\r\n            {\r\n\t\t      \"item\": \"Publicidad 1\",\r\n\t\t      \"Quantity\": 2,\r\n              \"rate\": 400\r\n\t\t    },\r\n            {\r\n              \"item\": \"Publicidad 2\",\r\n              \"Quantity\": 10,\r\n              \"rate\": 500\r\n            },\r\n            {\r\n              \"item\": \"Publicidad 3\",\r\n              \"Quantity\": 4,\r\n              \"rate\": 1000\r\n            }\r\n        ],\r\n        \"subtotal\": 450000,\r\n        \"discount\": 3500,\r\n        \"shipping\": 1800,\r\n        \"tax\": 0.12,\r\n        \"total\": 5006465,\r\n        \"note\": \"Nota de la factura\",\r\n        \"terms\": \"Terminos de la factura y servicio\"\r\n    }\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/invoice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"invoice"
+					]
+				},
+				"description": "insertar invoice"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/invoice",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					},
+					{
+						"key": "hola",
+						"value": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"logo\": \"http://ruta.com\",\r\n        \"fromclient\": \"Publicidad Creativa\",\r\n        \"toclient\": \"Sergio\",\r\n        \"date\": \"22/05/2018\",\r\n        \"numberinvoice\": 80,\r\n        \"payment\": \"De Contado - Transferencia\",\r\n        \"expiration\": \"25/05/2018\",\r\n        \"items\": [\r\n            {\r\n\t\t      \"item\": \"Publicidad 1\",\r\n\t\t      \"Quantity\": 2,\r\n              \"rate\": 400\r\n\t\t    },\r\n            {\r\n              \"item\": \"Publicidad 2\",\r\n              \"Quantity\": 10,\r\n              \"rate\": 500\r\n            },\r\n            {\r\n              \"item\": \"Publicidad 3\",\r\n              \"Quantity\": 4,\r\n              \"rate\": 1000\r\n            }\r\n        ],\r\n        \"subtotal\": 450000,\r\n        \"discount\": 3500,\r\n        \"shipping\": 1800,\r\n        \"tax\": 0.12,\r\n        \"total\": 5006465,\r\n        \"note\": \"Nota de la factura\",\r\n        \"terms\": \"Terminos de la factura y servicio\"\r\n    }\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/invoice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"invoice"
+					]
+				},
+				"description": "buscar todas las facturas"
+			},
+			"response": []
+		}
+	]
+}
