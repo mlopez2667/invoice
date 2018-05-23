@@ -1,0 +1,33 @@
+{
+        "logo": "http://ruta.com",
+        "fromclient": "Publicidad Creativa",
+        "toclient": "Sergio",
+        "date": "22/05/2018",
+        "numberinvoice": 80,
+        "payment": "De Contado - Transferencia",
+        "expiration": "25/05/2018",
+        "items": [
+            {
+              "item": "Publicidad 1",
+              "Quantity": 2,
+              "rate": 400
+            },
+            {
+              "item": "Publicidad 2",
+              "Quantity": 10,
+              "rate": 500
+            },
+            {
+              "item": "Publicidad 3",
+              "Quantity": 4,
+              "rate": 1000
+            }
+        ],
+        "subtotal": 450000,
+        "discount": 3500,
+        "shipping": 1800,
+        "tax": 0.12,
+        "total": 5006465,
+        "note": "Nota de la factura",
+        "terms": "Terminos de la factura y servicio"
+    }
