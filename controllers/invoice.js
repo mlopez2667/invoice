@@ -9,10 +9,10 @@ function saveInvoice(req,res){
 
 	let invoice = new Invoice();
 	invoice.logo = req.body.logo;
-	invoice.fromclient = req.body.fromclient;
-	invoice.toclient = req.body.toclient;
+	invoice.from_client = req.body.from_client;
+	invoice.to_client = req.body.to_client;
 	invoice.date = Date.now();
-	invoice.numberinvoice = req.body.numberinvoice;
+	invoice.number_invoice = req.body.number_invoice;
 	invoice.payment = req.body.payment;
 	invoice.expiration = Date.now();
 	invoice.items = req.body.items;

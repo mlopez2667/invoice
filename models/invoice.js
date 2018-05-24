@@ -5,10 +5,10 @@ const Schema = mongoose.Schema;
 
 const InvoiceSchema = Schema({
 	logo: String,
-	fromclient: String,
-	toclient: String,
+	from_client: String,
+	to_client: String,
 	date: Date,
-	numberinvoice: Number,
+	number_invoice: Number,
 	payment: String,
 	expiration: Date,
 	items: {type: Array, "default" : [] },
