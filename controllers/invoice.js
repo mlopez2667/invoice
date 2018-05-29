@@ -2,6 +2,7 @@
 
 const Invoice = require('../models/invoice');
 const nodemailer = require('nodemailer');
+const pdf = require('express-pdf');
 
 function saveInvoice(req,res){
 
@@ -74,12 +75,12 @@ function emailInvoicesSave(req,res) {
 	});
 
 	const mailOptions = {
-		from: 'propiaweb2667@gmail.com', // sender address
-		to: 'mlopez@keysystemsca.com', // list of receivers
-		cc: 'mlopez@keysystemsca.com', // list of receivers
-		bcc: 'mlopez@keysystemsca.com', // list of receivers
+		from: req.body.from, // sender address
+		to: req.body.to, // list of receivers
+		cc: req.body.cc, // list of receivers
+		bcc: req.body.bcc, // list of receivers
 		subject: 'Envio de Factura Node JS en Json', // Subject line
-		html: `${invoice}`// plain text body
+		html: `${invoice}`,// plain text body
 	};
 
 	transporter.sendMail(mailOptions, function (err, info) {
