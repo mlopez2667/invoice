@@ -12,9 +12,11 @@
     "body-parser": "^1.18.2",
     "crypto": "^1.0.1",
     "express": "^4.16.3",
+    "jade": "^1.11.0",
     "method-override": "^2.3.1",
     "mongoose": "^4.13.12",
     "morgan": "^1.5.1",
+    "nodemailer": "^4.6.5",
     "sails": "^1.0.2"
   },
   "main": "index.js",

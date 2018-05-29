@@ -6,6 +6,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const api = require('./routers');
+const nodemailer = require('nodemailer');
 
 /*CONTROLLER*/
 

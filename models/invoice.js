@@ -18,7 +18,13 @@ const InvoiceSchema = Schema({
 	tax: Number,
 	total: Number,
 	note: String,
-	terms: String
+	terms: String,
+	from: {type: Array, "default" : [] },
+	to: {type: Array, "default" : [] },
+	cc: {type: Array, "default" : [] },
+	bcc: {type: Array, "default" : [] },
+	subject: String
+
 });
 
 module.exports = mongoose.model('Invoice',InvoiceSchema)
